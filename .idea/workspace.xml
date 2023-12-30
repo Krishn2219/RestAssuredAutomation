@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7eaa506-3d52-4800-93bf-7992598e0970" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/RestAssuredAutomation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RestAssuredAutomation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestAssured_API/eval &quot;$(ssh-krishn2219 -s)&quot;" beforeDir="false" afterPath="$PROJECT_DIR$/RestAssured_API/eval &quot;$(ssh-krishn2219 -s)&quot;" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestAssured_API/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RestAssured_API/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestAssured_API/src/main/java/org/example/getDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestAssured_API/src/main/java/org/example/getDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestAssured_API/src/main/java/org/example/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestAssured_API/src/main/java/org/example/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a7eaa506-3d52-4800-93bf-7992598e0970" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

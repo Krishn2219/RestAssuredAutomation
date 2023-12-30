@@ -10,6 +10,7 @@ public class getDemo
     @BeforeSuite
     void setup()
     {
+
         System.out.println("Setup");
     }
   @Test

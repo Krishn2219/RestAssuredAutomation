@@ -1,0 +1,64 @@
+Index: RestAssured_API/src/main/java/org/example/getDemo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package java.org.example;\n\n\nimport org.testng.annotations.AfterSuite;\nimport org.testng.annotations.BeforeSuite;\nimport org.testng.annotations.Test;\n\npublic class getDemo\n{\n    @BeforeSuite\n    void setup()\n    {\n        System.out.println(\"Setup\");\n    }\n  @Test\n    void get_req(){\n\n    }\n   @AfterSuite\n    void teamDown(){\n\n    }\n}\n
+===================================================================
+diff --git a/RestAssured_API/src/main/java/org/example/getDemo.java b/RestAssured_API/src/main/java/org/example/getDemo.java
+--- a/RestAssured_API/src/main/java/org/example/getDemo.java	
++++ b/RestAssured_API/src/main/java/org/example/getDemo.java	
+@@ -4,6 +4,10 @@
+ import org.testng.annotations.AfterSuite;
+ import org.testng.annotations.BeforeSuite;
+ import org.testng.annotations.Test;
++import io.restassured.RestAssured;
++import io.restassured.response.Response;
++import static io.restassured.RestAssured.given;
++import static org.testng.Assert.assertEquals;
+ 
+ public class getDemo
+ {
+@@ -14,6 +18,8 @@
+     }
+   @Test
+     void get_req(){
++      RestAssured.baseURI = "http://localhost:3000";
++      RestAssured.
+ 
+     }
+    @AfterSuite
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd\">\n  <modelVersion>4.0.0</modelVersion>\n  <groupId>RestAssuredAutomation</groupId>\n  <artifactId>RestAssuredAutomation</artifactId>\n  <version>0.0.1-SNAPSHOT</version>\n  <packaging>jar</packaging>\n\n  <name>RestAssured_API</name>\n  <url>http://maven.apache.org</url>\n\n  <properties>\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\n  </properties>\n\n  <dependencies>\n    <dependency>\n      <groupId>junit</groupId>\n      <artifactId>junit</artifactId>\n      <version>3.8.1</version>\n      <scope>test</scope>\n    </dependency>\n\n    <!-- https://mvnrepository.com/artifact/org.testng/testng -->\n    <dependency>\n      <groupId>org.testng</groupId>\n      <artifactId>testng</artifactId>\n      <version>7.8.0</version>\n      <scope>test</scope>\n    </dependency>\n    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->\n    <dependency>\n      <groupId>io.rest-assured</groupId>\n      <artifactId>rest-assured</artifactId>\n      <version>5.3.0</version>\n      <scope>test</scope>\n    </dependency>\n\n    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->\n    <dependency>\n      <groupId>io.rest-assured</groupId>\n      <artifactId>rest-assured</artifactId>\n      <version>5.3.2</version>\n      <scope>compile</scope>\n    </dependency>\n\n    <!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->\n    <dependency>\n      <groupId>io.rest-assured</groupId>\n      <artifactId>json-path</artifactId>\n      <version>5.3.2</version>\n      <scope>test</scope>\n    </dependency>\n\n    <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->\n    <dependency>\n      <groupId>io.rest-assured</groupId>\n      <artifactId>json-schema-validator</artifactId>\n      <version>5.3.2</version>\n    </dependency>\n\n    <dependency>\n      <groupId>RestAssuredTraining</groupId>\n      <artifactId>RestAssuredTraining</artifactId>\n      <version>0.0.1-SNAPSHOT</version>\n    </dependency>\n  </dependencies>\n\n</project>
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	
++++ b/pom.xml	
+@@ -43,26 +43,6 @@
+       <scope>compile</scope>
+     </dependency>
+ 
+-    <!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+-    <dependency>
+-      <groupId>io.rest-assured</groupId>
+-      <artifactId>json-path</artifactId>
+-      <version>5.3.2</version>
+-      <scope>test</scope>
+-    </dependency>
+-
+-    <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+-    <dependency>
+-      <groupId>io.rest-assured</groupId>
+-      <artifactId>json-schema-validator</artifactId>
+-      <version>5.3.2</version>
+-    </dependency>
+-
+-    <dependency>
+-      <groupId>RestAssuredTraining</groupId>
+-      <artifactId>RestAssuredTraining</artifactId>
+-      <version>0.0.1-SNAPSHOT</version>
+-    </dependency>
+   </dependencies>
+ 
+ </project>
+\ No newline at end of file
